@@ -8,39 +8,147 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
-.wrapper {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  border: none;
+}
+
+.centered {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 100%;
+}
+
+.btn {
+  background-color: #69AA53;
+  color: white;
+  padding: 13px 29px;
+  border-radius: 25px;
+}
+
+#secondary-header {
+  height: 45px;
+  background-color: #353637;
+  color: #929aa3;
+  font-size: 12px;
+}
+
+#secondary-header__content {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#secondary-header__content i {
+  width: 26px;
+}
+
+.page-wrapper {
   position: relative;
 }
 
-.top-container {
-  height: 50px;
-  background-color: #353637;
+#main-header {
+  transition: height 0.5s;
+  transition: background-color 0.25s ease-in-out;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#main-header__content {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main-header__content .right {
+  display: flex;
+  align-items: center;
+}
+
+#menu {
+  list-style-type: none;
+}
+#menu li {
+  display: inline-block;
   color: white;
-  padding: 10px;
+  font-weight: 800;
+}
+
+.new {
+  padding: 2px;
+  color: white;
+  background-color: #69AA53;
+  border-radius: 2px;
+  font-size: 9px;
+}
+
+.menu-big img {
+  height: 45%;
+}
+.menu-big li {
+  padding-right: 45px;
+  font-size: 14px;
+}
+
+.menu-small img {
+  height: 80%;
+}
+.menu-small li {
+  padding-right: 35px;
+  font-size: 12px;
 }
 
 .header-small {
-  height: 100px;
+  height: 65px;
   background-color: rgba(53, 54, 55, 0.9);
-  color: white;
   position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .header-big {
-  height: 150px;
+  height: 115px;
   background-color: rgba(53, 54, 55, 0.5);
-  color: white;
+  position: absolute;
 }
 
-#page-content {
+#jumbotron img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+#jumbotron-text {
   position: absolute;
   left: 0;
   top: 0;
+  height: 100%;
   width: 100%;
 }
 
-.page-up {
-  margin-top: 100px;
+#jumbotron-text__inner {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 100%;
+  padding-top: 21%;
+  color: white;
+}
+#jumbotron-text__inner h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+#jumbotron-text__inner h2 {
+  font-size: 26px;
 }

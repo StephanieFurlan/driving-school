@@ -8,40 +8,32 @@ body {
    font-family: 'Mulish', sans-serif;
 }
 
-.wrapper {
-   position: relative;
+a {
+   text-decoration: none;
+   color: inherit;
 }
 
-.top-container {
-   height: 50px;
-   background-color: #353637;
+button,
+input {
+   border: none;
+}
+
+.centered {
+   width: 80%;
+   margin: 0 auto;
+   max-width: 1140px;
+   height: 100%;
+}
+
+@mixin centered {
+   width: 80%;
+   margin: 0 auto;
+   max-width: 1140px;
+}
+
+.btn {
+   background-color: #69AA53;
    color: white;
-   padding: 10px;
-}
-
-.header-small {
-   height: 100px;
-   background-color: rgba(53,54,55,0.9);
-   color: white;
-   position: fixed;
-   top: 0;
-   width: 100%;
-}
-
-.header-big {
-   height: 150px;
-   background-color: rgba(53,54,55,0.5);
-   color: white;
-}
-
-#page-content {
-   position: absolute;
-   left: 0;
-   top: 0;
-   width: 100%;
-}
-
-
-.page-up {
-   margin-top: 100px;
+   padding: 13px 29px;
+   border-radius: 25px;
 }
